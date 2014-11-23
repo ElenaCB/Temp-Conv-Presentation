@@ -1,0 +1,72 @@
+Temperature Converter
+========================================================
+author: Elena CB
+date: Sat Nov 22 23:09:11 2014
+transition: concave
+
+
+The App Temperature Converter
+========================================================
+
+Given a temperature in Celsius, Fahrenheit or Kelvin, and the units to convert (Celsius or Fahrenheit or Kelvin) said temperature, this app takes that information and uses some basic mathematical equations for the conversion to requested unit.
+
+Note, the app only converts one unit at a time.
+
+
+Some of Mathematical Equations
+========================================================
+
+From Celsius to Fahrenheit
+
+$$F= C \times \frac{9}{5} + 32$$
+
+
+```r
+temp2<-(temp1*(9/5))+32
+```
+
+From Celsius to Kelvin
+
+$$K= C +273.15$$
+
+
+```r
+temp2<-temp1+273.15
+```
+
+Where temp1 is the temperature given for the user and temp2 is the temperature that the user wants to know.
+
+Test the temperature conversion of the app
+========================================================
+Some examples how the convert function works.
+
+
+Convert 55 C (Celsius) to F (Fahrenheit)
+
+```r
+tempConv(55,"C","F")
+```
+
+```
+[1] "131 F"
+```
+
+Convert 150 F (Fahrenheit) to K (Kelvin)
+
+```r
+tempConv(150,"F","K")
+```
+
+```
+[1] "338.71 K"
+```
+
+Behind the app
+========================================================
+The *requirements* for this app come from the course "Developing Data Products"  offered by Coursera in Data Science Specialization.
+
+Using a shiny platform for creating the app, in which using, some form of input *required* in the widget: textImput, radio button, checkbox, numericImput, actionButton.
+
+To see the entire code [click here](https://github.com/ElenaCB/Temperature-Converter)
+
+To see the app [click here](http://elenacb.shinyapps.io/part1)
